@@ -40,6 +40,8 @@ The [Data](https://github.com/svallejovera/smr_racism#data) section describes th
 ## Data
 All data files are available at this public repository. Here are the names and the content of each data file:
 
+- `data/final/sub_indigena_pred.Rdata`: Final data file with network data and predicted labels for each tweet from the indigena Twitter query.
+- `data/final/sub_paro_pred.Rdata`: Final data file with network data and predicted labels for each tweet from the paro Twitter query.
 - `data/to_train/pre_train_ecuador.txt`: unstructured corpus of twitter data used to further pretrain the xlm-roberta-large model.
 - `data/to_train/training_set.xlsx`: training set used to fine-tune all supervised machine learning models.
 - `data/to_predict/text_indigena_to_predict.xlsx`: corpus of tweets collected between 2018 and 2021 related to the indígena community in Ecuador.
