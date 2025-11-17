@@ -13,6 +13,12 @@ The [Data](https://github.com/svallejovera/smr_racism#data) section describes th
 
 ## Code
 
+### Networks
+- `0_code_networks/1_indigena_network.R`: R code to create networks and communities from Twitter data from the indigena query using community detecting algorithms. 
+- `0_code_networks/2a_paro_network_1.R`: R code to create networks and communities from Twitter data from the paro query using community detecting algorithms. Requires multiple files because data is too large. 
+- `0_code_networks/2b_paro_data_cropped.R`: R code to create networks and communities from Twitter data from the paro query using community detecting algorithms. 
+- `0_code_networks/2c_paro_network_final.R`: R code to create networks and communities from Twitter data from the paro query using community detecting algorithms. 
+
 ### Pre-Training and Fine-Tuning
 - `1_code_fine_tune/1_pre_train_model.py`: python code to add tokens to and further pre-train an xlm-roberta-large model. Further pre-trained model is called: xlm-r-racismo-PT. Execution time:
 - `1_code_fine_tune/2_CV_model_PT.py`: python code to fine-tune our xlm-r-racismo-PT model using the `data/training_set.xlsx` training set with 10-fold cross-valiation to evaluate performance. 
@@ -32,15 +38,19 @@ The [Data](https://github.com/svallejovera/smr_racism#data) section describes th
 - `3_code_empirics/2_racism_by_bots.R`: R code to estimate the multinomial model from Appendix G and Figure G1 from the Appendix.
 
 ## Data
+All data files are available at this public repository. Here are the names and the content of each data file:
+
 - `data/to_train/pre_train_ecuador.txt`: unstructured corpus of twitter data used to further pretrain the xlm-roberta-large model.
 - `data/to_train/training_set.xlsx`: training set used to fine-tune all supervised machine learning models.
 - `data/to_predict/text_indigena_to_predict.xlsx`: corpus of tweets collected between 2018 and 2021 related to the indígena community in Ecuador.
 - `data/to_predict/text_indigena_to_predict.xlsx`: corpus of tweets collected during 2019 indigena uprising in Ecuador.
 - `data/tw_networks/sub_indigena.Rdata` and `data/tw_networks/sub_paro.Rdata`: Twitter data (igraph object) collected between 2018 and 2021 related to the indígena community in Ecuador and the 2019 indigena uprising in Ecuador. The unit of analysis is the tweet (original and retweeted). The variables of interest are:
+  
       - **membership**: cummunity the user belongs to (estimated using community detection alrogithm from `0_code_networks')
       - **ind**: in-degree of user.
       - **to**: user tweeting or retweeting a tweet.
-      - **text_id**: tweet or retweet individual id.     
+      - **text_id**: tweet or retweet individual id.
+
 - `data/bots/sample_names.xlsx`: sample from full `data/tw_networks/sub_paro.Rdata` used to identify bots.
 
 A full tutorial on how to train Transformer-based models can be found [here](https://colab.research.google.com/drive/1rWh6JVhJ4aZmdTYZUYVYo3AOGb2TOi6b?usp=sharing#scrollTo=Classification_Models). A complete course on Computational Text Analysis can be found [here](https://svallejovera.github.io/cpa_uwo/index.html)
