@@ -9,7 +9,7 @@ A link to the latest pre-print is available [here](https://arxiv.org/abs/2401.09
 This README file provides an overview of the replications materials for the article. 
 The [Code](https://github.com/svallejovera/smr_racism#code) section describes the code used to create networks (see Appendix), pre-train and fine-tune the models, predict labels in the data, and a replication of the main analysis.
 Given the size of the models, we have not uploaded them to any repository. However, the best performing model described in the paper, XLM-R-Racismo, whose full technical model name is ‘xlm-r-racismo-es-v2’, is available for public use at huggingface.co: https://huggingface.co/timoneda/xlm-r-racismo-es-v2.
-The [Data](https://github.com/svallejovera/smr_racism#data) section describes the main dataset required to reproduce the tables and figures in the paper. All the data is available here: 
+The [Data](https://github.com/svallejovera/smr_racism#data) section describes the main dataset required to reproduce the tables and figures in the paper. All the data is available here: https://doi.org/10.7910/DVN/3G6YXY 
 
 ## Code
 
@@ -38,7 +38,7 @@ The [Data](https://github.com/svallejovera/smr_racism#data) section describes th
 - `3_code_empirics/2_racism_by_bots.R`: R code to estimate the multinomial model from Appendix G and Figure G1 from the Appendix.
 
 ## Data
-All data files are available at this public repository. Here are the names and the content of each data file:
+All data files are available at this public repository: https://doi.org/10.7910/DVN/3G6YXY. Here are the names and the content of each data file:
 
 - `data/final/sub_indigena_pred.Rdata`: Final data file with network data and predicted labels for each tweet from the indigena Twitter query.
 - `data/final/sub_paro_pred.Rdata`: Final data file with network data and predicted labels for each tweet from the paro Twitter query.
