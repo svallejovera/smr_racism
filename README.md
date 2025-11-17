@@ -4,12 +4,12 @@ Replication materials for "Machines Do See Color: Using LLMs to Classify Overt a
 > __Abstract:__
 > Extant work has identified two discursive forms of racism: overt and covert. While both forms have received attention in scholarly work, research on covert racism has been limited. Its subtle and context-specific nature has made it difficult to systematically identify covert racism in text, especially in large corpora. In this article, we first propose a theoretically driven and generalizable process to identify and classify covert and overt racism in text. This process allows researchers to construct coding schemes and build labeled datasets. We use the resulting dataset to train XLM-RoBERTa, a cross-lingual model for supervised classification with a cutting-edge contextual understanding of text. We show that XLM-R and XLM-R-Racismo, our pretrained model, outperform other state-of-the-art approaches in classifying racism in large corpora. We illustrate our approach using a corpus of tweets relating to the Ecuadorian indígena community between 2018 and 2021. 
 
-A link to the latest pre-print is available [here](CHANGE). The published version is [here](CHANGE).
+A link to the latest pre-print is available [here](https://arxiv.org/abs/2401.09333). The published version is [here](CHANGE).
 
 This README file provides an overview of the replications materials for the article. 
-The [Code](https://github.com/svallejovera/smr_racism#code) section describes the code used to pre-train and fine-tune the models, predict labels in the data, and a replication of the main analysis.
+The [Code](https://github.com/svallejovera/smr_racism#code) section describes the code used to create networks (see Appendix), pre-train and fine-tune the models, predict labels in the data, and a replication of the main analysis.
 Given the size of the models, we have not uploaded them to any repository. However, the best performing model described in the paper, XLM-R-Racismo, whose full technical model name is ‘xlm-r-racismo-es-v2’, is available for public use at huggingface.co: https://huggingface.co/timoneda/xlm-r-racismo-es-v2.
-The [Data](https://github.com/svallejovera/smr_racism#data) section describes the main dataset required to reproduce the tables and figures in the paper. 
+The [Data](https://github.com/svallejovera/smr_racism#data) section describes the main dataset required to reproduce the tables and figures in the paper. All the data is available here: 
 
 ## Code
 
